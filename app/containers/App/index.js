@@ -17,8 +17,18 @@ import GlobalStyle from '../../global-styles';
 
 export default function App() {
   return (
-    <div>
-      <Switch>
+    <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div
+        style={{
+          backgroundColor: 'white',
+          padding: '20px',
+          color: 'black',
+          boxShadow: '0 0 12px black',
+        }}
+      >
+        <p>Menu</p>
+      </div>
+      <Switch style={{}}>
         <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
